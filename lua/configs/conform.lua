@@ -6,13 +6,14 @@ local options = {
     -- html = { "prettier" },
   },
 
-  format_on_save = {
-    -- These options will be passed to conform.format()
-    timeout_ms = 500,
-    async = false,
+  -- Uncomment to enable auto format on save
+  --[[ format_on_save = {
     lsp_fallback = true,
-  },
-  log_level = vim.log.levels.DEBUG,
+    async = false,
+    timeout_ms = 500,
+  }, ]]
+
+  log_level = vim.log.levels.ERROR,
 }
 
 require("conform").setup(options)

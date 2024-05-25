@@ -6,6 +6,15 @@ return {
       require "configs.conform"
     end,
   },
+  {
+    "mfussenegger/nvim-lint",
+    config = function ()
+      local lint = require("lint")
+      lint.linters_by_ft = {
+        python = {"ruff"},
+      }
+    end
+  },
 
   -- These are some examples, uncomment them if you want to see them work!
   {
