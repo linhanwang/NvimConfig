@@ -2,8 +2,12 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
     python = { "isort", "ruff_format" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    css = { "prettier" },
+    html = { "prettier" },
+    javascript = { "prettier" },
+    json = { "prettier" },
+    yaml = { "prettier" },
+    markdown = { "prettier" },
   },
 
   -- Uncomment to enable auto format on save
