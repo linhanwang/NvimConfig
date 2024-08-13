@@ -7,7 +7,7 @@ local M = {}
 M.ui = {
 	theme = "gruvbox",
   statusline = {
-    theme = "minimal",
+    theme = "default",
   },
   nvdash = {
     load_on_startup = true,
