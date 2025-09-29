@@ -10,7 +10,7 @@ vim.opt.colorcolumn = "120"
 -- enable folding using treesitter
 vim.opt.foldlevel = 99
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
 vim.lsp.set_log_level "error"
 
