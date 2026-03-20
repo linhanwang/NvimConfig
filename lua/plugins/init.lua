@@ -34,7 +34,7 @@ return {
         "html-lsp",
         "css-lsp",
         "prettier",
-        "pyright",
+        "ty",
         "isort",
         "ruff",
         "clangd",
