@@ -182,4 +182,9 @@ return {
     },
     keys = { { "<leader>a", "<cmd>AerialToggle!<cr>", desc = "Tag Outline" } },
   },
+
+  {
+    "sindrets/diffview.nvim",
+    cmd = { "DiffviewOpen", "DiffviewFileHistory" },
+  },
 }
