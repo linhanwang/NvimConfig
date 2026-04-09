@@ -187,4 +187,21 @@ return {
     "sindrets/diffview.nvim",
     cmd = { "DiffviewOpen", "DiffviewFileHistory" },
   },
+
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = { "hrsh7th/cmp-path" },
+    opts = function(_, opts)
+      -- Replace async_path with plain path to avoid crash from passing uv handle across threads
+      local sources = {}
+      for _, s in ipairs(opts.sources or {}) do
+        if s.name ~= "async_path" then
+          table.insert(sources, s)
+        end
+      end
+      table.insert(sources, { name = "path" })
+      opts.sources = sources
+      return opts
+    end,
+  },
 }
