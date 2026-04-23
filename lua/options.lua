@@ -6,6 +6,8 @@ require "nvchad.options"
 -- o.cursorlineopt ='both' -- to enable cursorline!
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "120"
+vim.opt.mouse = "a"
+vim.opt.mousemoveevent = true
 
 -- enable folding using treesitter
 vim.opt.foldlevel = 99
