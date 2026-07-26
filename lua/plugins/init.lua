@@ -68,6 +68,9 @@ return {
   {
     "stevearc/aerial.nvim",
     lazy = true,
+    -- aerial >= dd80db7 (2026-05-14) requires nvim 0.12; setup() bails before
+    -- creating commands on older versions
+    cmd = { "AerialToggle", "AerialOpen", "AerialNavToggle" },
     opts = {
       lazy_load = true,
       backends = { ["_"] = { "treesitter", "lsp", "markdown", "man" } },

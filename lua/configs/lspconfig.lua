@@ -21,4 +21,4 @@ vim.lsp.config("clangd", {
   capabilities = capabilities,
   cmd = { "clangd", "--header-insertion=never" },
 })
-vim.lsp.enable("clangd")
+vim.lsp.enable "clangd"

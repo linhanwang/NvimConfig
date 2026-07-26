@@ -14,7 +14,7 @@ vim.opt.foldlevel = 99
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
-vim.lsp.set_log_level "error"
+vim.lsp.log.set_level(vim.log.levels.ERROR)
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
   callback = function()
